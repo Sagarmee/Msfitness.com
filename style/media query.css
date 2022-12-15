@@ -1,0 +1,412 @@
+@media screen and (max-width: 800px) {
+  .header nav .nvbar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    transition: top 0.5s ease;
+    display: none;
+  }
+
+  .header nav .nvbar .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+  }
+
+  .header nav .openMenu {
+    display: block;
+    color: #ffffff;
+  }
+
+  .header nav .nvbar .n-item .dw-link {
+    background-color: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+  .header nav .nvbar .nv-item .nv-link {
+    background-color: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+
+  .header nav .nvbar .icons i {
+    display: inline-block;
+    padding: 12px;
+    color: #ffffff;
+  }
+
+  .header .header-content {
+    height: 80vh;
+    padding: 10rem 0;
+    align-items: center;
+  }
+
+  .header .header-content .element-widget h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .header .header-content .quotes {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .header .btn-joinus {
+    font-size: 1rem;
+  }
+
+  /* //footer */
+  .parent-part {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #footer .parent-part .first-part img {
+    display: block;
+    margin: auto;
+    width: 30%;
+  }
+
+  #footer .parent-part .second-part h5 {
+    text-align: center;
+  }
+
+  #footer .parent-part .second-part {
+    margin: 2rem 0;
+  }
+
+  #footer .parent-part .second-part .link ul {
+    padding: 1rem 0;
+  }
+
+  #footer .parent-part .second-part .link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer .parent-part .third-part .address div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer .copyright .copy {
+    flex-direction: column;
+  }
+  #footer .copyright .copy .footer-social a {
+    padding: 0 1rem;
+  }
+
+  #footer .parent-part .first-part img {
+    width: 100%;
+  }
+
+  #footer .parent-part {
+    padding: 0 0 2rem 0;
+  }
+
+  /* //blog */
+
+  #blog .blog .blog-heading .blog-co-title {
+    width: 100%;
+  }
+
+  #blog .blog .blog-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  #blog .blog .blog-heading h4 {
+    font-size: 1.3rem;
+  }
+
+  #testimonial .testimonial-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  #testimonial .testimonial-heading h4 {
+    font-size: 1.3rem;
+  }
+
+  #services .services-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  #services .services-heading h4 {
+    font-size: 1.3rem;
+  }
+
+  /* contact us */
+  #contact .contact-details h5 {
+    font-size: 1.4rem;
+  }
+
+  #contact .contact-details h4 {
+    font-size: 1.5rem;
+  }
+
+  #contact .contact-details div {
+    max-width: 1000px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #contact .contact-details div p {
+    font-size: 1rem;
+  }
+
+  /* //about us */
+  header .aboutus-heading h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  header .aboutus-heading h5 {
+    font-size: 1.5rem;
+  }
+
+  /* ?/services */
+
+  #services .services-head {
+    padding: 0;
+  }
+
+  #services .services-head .serve-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+
+  #services .services-list {
+    grid-template-columns: 1fr;
+  }
+  #services .services-list .services {
+    margin-top: 4rem;
+  }
+  .header .header-content{
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #about .about-us .showcase-part .image-collection {
+    display: none;
+  }
+  #about .about-us {
+    display: block;
+    flex-direction: row;
+  }
+  #about .about-us .about-content {
+    flex-basis: auto;
+  }
+
+  #about .about-us .showcase-part {
+    display: block;
+  }
+
+  #aboutus .about {
+    flex-direction: column;
+  }
+
+  #aboutus .about .personal-images {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+  #aboutus .about .about-text {
+    padding: 0 1.3rem;
+  }
+
+  #aboutus .about .about-text {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #aboutus .about .about-text h5 {
+    font-size: 1.4rem;
+  }
+  #aboutus .about .about-text h2 {
+    font-size: 1.5rem;
+  }
+  #aboutus .about .about-text p {
+    font-size: 1rem;
+  }
+
+  #aboutus .about .about-text ul {
+    padding: 0 2rem;
+  }
+
+  #Accessories {
+    padding: 0;
+  }
+
+  /* //join us */
+  #joinus .joinnow .heading h3 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  #joinus .joinnow .heading h2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  #joinus .joinnow .heading h3 .gym {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  #workoutclass .workout-class {
+    grid-template-columns: 1fr;
+  }
+
+  /* //gallery */
+  #gallery .first-sloat .responsive {
+    margin-bottom: -140px;
+  }
+
+  /* //personal-gallery */
+
+  #personal-gallery .row {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  /* //contact us */
+  #contact-us .msfitness-info {
+    flex-direction: column;
+  }
+
+  #contact-us .msfitness-info form {
+    width: auto;
+  }
+  #contact-us .msfitness-info form input,
+  #contact-us .msfitness-info form textarea {
+    width: 100%;
+  }
+  #contact-us .msfitness-info form input[type="text"] {
+    font-size: 1rem;
+  }
+  #contact-us .msfitness-info form .btn-submit {
+    margin-bottom: 1rem;
+  }
+  #contact-us .msfitness-info .information {
+    height: 100%;
+  }
+  #contact-us .msfitness-info .information .locate h4 {
+    font-size: 1.2rem;
+  }
+
+  /* //blog */
+
+  #blog .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header .header-content .element-widget h2 {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .header .header-content .quotes {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+  }
+
+  #contact .contact-details h5 {
+    font-size: 1.2rem;
+  }
+
+  #contact .contact-details h4 {
+    font-size: 1.2rem;
+  }
+
+  #contact .contact-details div {
+    max-width: 700px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #contact .contact-details div p {
+    font-size: 0.8rem;
+  }
+
+  /* //about */
+  header .aboutus-heading h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  header .aboutus-heading h5 {
+    font-size: 1rem;
+  }
+
+  #aboutus .about .about-text h5 {
+    font-size: 1rem;
+  }
+  #aboutus .about .about-text h2 {
+    font-size: 1.2rem;
+  }
+  #aboutus .about .about-text p {
+    font-size: 0.8rem;
+  }
+
+  #aboutus .about .about-text ul li a {
+    font-size: 0.8rem;
+  }
+
+  /* //join */
+  #joinus .joinnow .heading h3,
+  #workoutclass .class-heading h6 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #joinus .joinnow .heading h2,
+  #workoutclass .class-heading h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #joinus .joinnow .heading h3 .gym {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  #workoutclass {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .social-media-information {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .post-slide .post-content {
+    padding: 0px 15px 25px 15px;
+  }
+}
+
+/* //counter */
+@media (max-width: 786px) {
+  .projectFactsWrap .item {
+    flex: 0 0 50%;
+  }
+}

@@ -1,0 +1,353 @@
+@import "../utilities/utililes";
+@import "../nav/nav";
+
+
+header .big-screen-social{
+  z-index: 999;
+  position: fixed;
+  right: 50px;
+  bottom: 40px;
+  padding: 1rem 0;
+
+  .fa-whatsapp{
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: #25D366;
+  }   
+  .fa-phone-alt{
+    font-size: 1.8rem;
+    color: #d3a3c9;
+  }
+}
+
+
+header::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/50597/man-male-boy-a-person-50597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header .aboutus-heading {
+  color: white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: sideline 2s ease alternate;
+
+  h2 {
+    color: $white-color !important;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  h5 {
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes sideline {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+//about us
+#aboutus {
+  overflow: hidden;
+  min-height: 100vh;
+  color: white !important;
+
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0 1rem 0;
+    align-items: center;
+
+    .personal-images {
+      width: 40%;
+
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    .about-text {
+      padding: 0 3rem;
+      width: 90%;
+      max-width: 800px;
+
+      h5 {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-family: "Lato", serif;
+        letter-spacing: 1.3px;
+        font-weight: 800;
+        margin-bottom: 0.6rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        font-family: "Lato", serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-family: "Lato";
+        letter-spacing: 1.4px;
+        color: rgba(245, 245, 220, 0.856);
+      }
+
+      ul {
+        li {
+          a {
+            color: rgba(245, 245, 220, 0.856);
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 0.6rem 0;
+            transition: all 0.5s ease;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+          }
+
+          a:hover {
+            color: $dark-orange-color !important;
+          }
+
+          .fas {
+            color: $dark-orange-color;
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      li:hover .fas {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+//join us
+#joinus {
+  min-height: 100vh;
+  color: $white-color;
+  overflow: hidden;
+
+  .joinnow {
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem 0;
+
+      h6 {
+        color: $dark-orange-color;
+        font-family: "Lato", "sans-serif";
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+      }
+      h3 {
+        margin-bottom: 0.4rem !important;
+        font-size: 2.1rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+
+        .gym {
+          color: $dark-orange-color;
+          font-family: "Lato", "Sans-serif";
+        }
+      }
+      h2 {
+        color: $white-color;
+        margin-bottom: 0.4rem !important;
+      }
+    }
+  }
+
+  .free-services {
+    img {
+      margin: auto;
+      display: block;
+      width: 200px;
+      margin-bottom: 1rem;
+    }
+
+    h6 {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.3rem;
+      font-family: "Lato", "sans-serif";
+      color: $dark-orange-color;
+      font-family: 700;
+      letter-spacing: 1px;
+    }
+    p {
+      text-transform: capitalize;
+      text-align: center;
+      font-family: "Lato", "sans-serif";
+      font-weight: 300;
+    }
+  }
+}
+
+//class
+#workoutclass {
+  min-height: 100vh;
+  color: white;
+  padding: 4rem 0;
+
+  .class-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    text-align: center;
+
+    h6 {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-family: "Lato", "sans-serif";
+      font-weight: 700;
+      color: $dark-orange-color;
+    }
+
+    h2 {
+      color: white;
+      font-family: "Lato", "sans-serif";
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+  }
+
+  .workout-class {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-gap: 1.5rem;
+    overflow: hidden;
+
+    .class {
+      height: auto;
+      width: auto;
+      position: relative;
+      cursor: pointer;
+
+      .class img {
+        border-radius: 10px;
+      }
+
+      .class-title {
+        background-color: white;
+        color: black;
+        display: inline-block;
+        padding: 0.3rem 2.5rem 0.3rem 0.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top-right-radius: 7rem;
+
+        h5 {
+          text-transform: capitalize;
+          font-family: "Lato", "sans-serif";
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+
+      .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease;
+      }
+    }
+    .class:hover .overlay {
+      background-color: rgba(0, 0, 0, 0.747);
+      z-index: 99;
+    }
+
+    .class:hover .class-title {
+      z-index: 999;
+    }
+  }
+}
+
+#Accessories {
+  min-height: 100vh;
+  color: $white-color;
+  padding: 4rem 0 0 0;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Lato", "sans-serif";
+  }
+
+  .col-3 {
+    border: 1px solid rgba(179, 174, 174, 0.356);
+  }
+
+  .zero {
+    padding: 2rem 0 0 1rem;
+  }
+
+  .first div,
+  .second div,
+  .third div {
+    padding: 1.2rem 1rem;
+
+    .fas {
+      color: $white-color;
+    }
+
+    span {
+      margin-left: 1rem;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      font-weight: "poppins", "Lato";
+      letter-spacing: 0.8px;
+    }
+
+    span:hover {
+      color: $dark-orange-color;
+    }
+
+    span:hover .fas {
+      color: $white-color;
+    }
+  }
+}
+
+@import "../footer/footer";

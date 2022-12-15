@@ -1,0 +1,256 @@
+@import "../utilities/utililes";
+@import "../nav/nav";
+
+header .big-screen-social{
+  z-index: 999;
+  position: fixed;
+  right: 50px;
+  bottom: 40px;
+  padding: 1rem 0;
+
+  .fa-whatsapp{
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: #25D366;
+  }   
+  .fa-phone-alt{
+    font-size: 1.8rem;
+    color: #d3a3c9;
+  }
+}
+
+header::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/50597/man-male-boy-a-person-50597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header .services-heading {
+  color: white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: sideline 2s ease alternate;
+
+  h2 {
+    color: $white-color !important;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  h5 {
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes sideline {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#services {
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 2rem 0 3rem;
+
+  .container-fluid {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .services-head {
+    padding: 2rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: $dark-orange-color;
+      font-size: 1.5rem;
+    }
+    h2 {
+      text-align: center;
+      color: $white-color;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    .serve-content {
+      text-align: center;
+      max-width: 700px;
+      width: 60%;
+      margin: auto;
+    }
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+
+    .services {
+      position: relative;
+
+      .services-image img {
+        border-radius: 10px;
+      }
+      .services-name {
+        margin-bottom: -30px;
+        position: absolute;
+        bottom: 0;
+        padding: 0.8rem 1.3rem;
+        background-color: #dd1111;
+        display: flex;
+        justify-content: center;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        z-index: -1;
+
+        .icon img {
+          width: 60px;
+          margin-right: 1rem;
+        }
+
+        .text h5 {
+          text-transform: capitalize;
+          font-size: 1.2rem;
+          font-family: "Lato", sans-serif;
+          letter-spacing: 1px;
+          font-weight: 600;
+        }
+
+        .btn-joinus {
+          display: inline;
+          background-color: #000000;
+          color: white;
+          font-size: 1rem;
+          font-weight: 500;
+          border-radius: 5px;
+          text-transform: uppercase;
+        }
+
+        .btn-joinus:hover {
+          background-color: rgb(255, 255, 4);
+          color: $black-color;
+        }
+      }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.678);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+      }
+    }
+    .services:hover .overlay,
+    .services:hover .services-name {
+      z-index: 1;
+    }
+  }
+}
+
+#classoverall {
+  overflow: hidden;
+  padding: 2rem 0;
+  min-height: 100vh;
+  background-color: #000000;
+
+  .class-description {
+    text-align: center;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      color: $white-color;
+    }
+
+    .hr {
+      display: block;
+      margin: auto;
+      width: 80px;
+      height: 5px;
+      border-top-right-radius: 10px;
+      background-color: $dark-orange-color;
+    }
+  }
+
+  .goal {
+    padding: 3rem 0;
+
+    .summmery {
+      margin-bottom: 3rem;
+      .icon-mission {
+        img {
+          width: 50px;
+          height: 50px;
+          margin-right: 2rem;
+        }
+
+        .mission-summery {
+          color: $white-color;
+
+          h5 {
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+          p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            text-transform: capitalize;
+            font-family: "Lato", sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  .col-12 .btn-joinus {
+    background-color: rgb(255, 1, 1);
+    display: inline;
+    padding: 0.4rem 1.2rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+  }
+
+  .col-12 .btn-joinus:hover {
+    background-color: #fdfd06;
+    color: $black-color;
+  }
+}
+@import "../footer/footer";
